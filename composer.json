@@ -1,0 +1,29 @@
+{
+    "name": "isinlor/WordsTree",
+    "description": "Application to learn language.",
+    "repositories": [
+        {
+            "url": "https://github.com/Isinlor/ToroPHP.git",
+            "type": "git"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.*",
+        "bradstinson/assets": "1.*",
+        "isinlor/torophp": "*",
+        "lox/pheasant": "dev-master",
+        "components/jquery": "2.0.*",
+        "components/bootstrap": "3.0.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Isinlor",
+            "email": "isinlor@gmail.com"
+        }
+    ],
+    "config": {
+        "component-dir": "app/public/vendor"
+    },
+    "minimum-stability": "dev"
+}
