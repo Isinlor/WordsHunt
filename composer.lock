@@ -3,100 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "207cc999923aad2b226b2fe54f599e69",
+    "hash": "58d6a782d8c7124841ea5f88b9cd369e",
     "packages": [
-        {
-            "name": "bradstinson/assets",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bradstinson/assets.git",
-                "reference": "5d4095d1abb57f025999e8f72f183a437ad6ef1a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bradstinson/assets/zipball/5d4095d1abb57f025999e8f72f183a437ad6ef1a",
-                "reference": "5d4095d1abb57f025999e8f72f183a437ad6ef1a",
-                "shasum": ""
-            },
-            "require": {
-                "coffeescript/coffeescript": "1.3.1",
-                "kriswallsmith/assetic": "1.*",
-                "leafo/lessphp": "v0.3.9",
-                "natxet/cssmin": "dev-master",
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brad Stinson",
-                    "email": "brad@bradstinson.net",
-                    "role": "Developer"
-                }
-            ],
-            "description": "A simple assets library. Combine and minify your JS and CSS assets",
-            "homepage": "https://github.com/bradstinson/assets",
-            "keywords": [
-                "JS",
-                "assets",
-                "css",
-                "minify"
-            ],
-            "time": "2013-03-18 18:25:25"
-        },
-        {
-            "name": "coffeescript/coffeescript",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/alxlit/coffeescript-php.git",
-                "reference": "ef262881d3f1edcca1366f4ddf18293843370da5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/alxlit/coffeescript-php/zipball/ef262881d3f1edcca1366f4ddf18293843370da5",
-                "reference": "ef262881d3f1edcca1366f4ddf18293843370da5",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "CoffeeScript": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Alex Little",
-                    "email": "alxlit@gmail.com",
-                    "homepage": "http://alxlit.name"
-                }
-            ],
-            "description": "A port of the CoffeeScript compiler to PHP.",
-            "homepage": "http://github.com/alxlit/coffeescript-php",
-            "keywords": [
-                "JS",
-                "coffee",
-                "coffeescript",
-                "javascript"
-            ],
-            "time": "2012-08-04 14:44:51"
-        },
         {
             "name": "components/bootstrap",
             "version": "3.0.3",
@@ -199,6 +107,105 @@
             "time": "2013-07-12 08:48:34"
         },
         {
+            "name": "hybridauth/hybridauth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hybridauth/hybridauth.git",
+                "reference": "8e0c83ee80e7553c008bacb82d41b01f81c18ce2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hybridauth/hybridauth/zipball/8e0c83ee80e7553c008bacb82d41b01f81c18ce2",
+                "reference": "8e0c83ee80e7553c008bacb82d41b01f81c18ce2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Hybrid": "hybridauth/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "(MIT or GPL-3.0+)"
+            ],
+            "authors": [
+                {
+                    "name": "Miled",
+                    "email": "hybridauth@gmail.com"
+                }
+            ],
+            "description": "Open source social sign on PHP library.",
+            "homepage": "http://hybridauth.sourceforge.net",
+            "keywords": [
+                "OpenId",
+                "facebook",
+                "google",
+                "hybridauth",
+                "login",
+                "oauth",
+                "social",
+                "twitter",
+                "yahoo"
+            ],
+            "time": "2014-03-01 19:15:04"
+        },
+        {
+            "name": "imsky/holder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/imsky/holder.git",
+                "reference": "55a53b737e5ad80bb2d068ee8fe84180072c79a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/imsky/holder/zipball/55a53b737e5ad80bb2d068ee8fe84180072c79a5",
+                "reference": "55a53b737e5ad80bb2d068ee8fe84180072c79a5",
+                "shasum": ""
+            },
+            "require": {
+                "robloach/component-installer": "*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "holder.js"
+                    ],
+                    "files": [
+                        "holder.min.js"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ivan Malopinsky",
+                    "homepage": "http://imsky.co"
+                }
+            ],
+            "description": "Holder uses the canvas element and the data URI scheme to render image placeholders entirely in browser.",
+            "homepage": "https://github.com/imsky/holder",
+            "keywords": [
+                "canvas",
+                "client-side",
+                "development",
+                "generation",
+                "images",
+                "placeholders"
+            ],
+            "time": "2014-02-08 02:06:55"
+        },
+        {
             "name": "isinlor/torophp",
             "version": "dev-master",
             "source": {
@@ -277,12 +284,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "d013aae51baf893fe8d38b41f2d24db03e1cfbf7"
+                "reference": "8342a250cd6e8d693332e7899b2e9c62c8187156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/d013aae51baf893fe8d38b41f2d24db03e1cfbf7",
-                "reference": "d013aae51baf893fe8d38b41f2d24db03e1cfbf7",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/8342a250cd6e8d693332e7899b2e9c62c8187156",
+                "reference": "8342a250cd6e8d693332e7899b2e9c62c8187156",
                 "shasum": ""
             },
             "require": {
@@ -342,48 +349,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-02-04 10:36:39"
-        },
-        {
-            "name": "leafo/lessphp",
-            "version": "v0.3.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/leafo/lessphp.git",
-                "reference": "a11a6141b5715162b933c405379765d817891c5d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/leafo/lessphp/zipball/a11a6141b5715162b933c405379765d817891c5d",
-                "reference": "a11a6141b5715162b933c405379765d817891c5d",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "0.3-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "lessc.inc.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT",
-                "GPL-3.0"
-            ],
-            "authors": [
-                {
-                    "name": "Leaf Corcoran",
-                    "email": "leafot@gmail.com",
-                    "homepage": "http://leafo.net"
-                }
-            ],
-            "description": "lessphp is a compiler for LESS written in PHP.",
-            "homepage": "http://leafo.net/lessphp/",
-            "time": "2013-03-02 16:13:31"
+            "time": "2014-02-28 18:17:10"
         },
         {
             "name": "lox/pheasant",
@@ -441,27 +407,32 @@
             "time": "2014-01-21 07:11:11"
         },
         {
-            "name": "natxet/CssMin",
+            "name": "pimple/pimple",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/natxet/CssMin.git",
-                "reference": "afdcdbdb5fc332313f47a79ae60346df3e69a572"
+                "url": "https://github.com/fabpot/Pimple.git",
+                "reference": "30651c5b19e1ec24e26d33c1600fc09ea3802f7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/natxet/CssMin/zipball/afdcdbdb5fc332313f47a79ae60346df3e69a572",
-                "reference": "afdcdbdb5fc332313f47a79ae60346df3e69a572",
+                "url": "https://api.github.com/repos/fabpot/Pimple/zipball/30651c5b19e1ec24e26d33c1600fc09ea3802f7a",
+                "reference": "30651c5b19e1ec24e26d33c1600fc09ea3802f7a",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.0"
+                "php": ">=5.3.0"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "autoload": {
-                "classmap": [
-                    "src/"
-                ]
+                "psr-0": {
+                    "Pimple": "lib/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -469,18 +440,19 @@
             ],
             "authors": [
                 {
-                    "name": "Joe Scylla",
-                    "email": "joe.scylla@gmail.com",
-                    "homepage": "https://profiles.google.com/joe.scylla"
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
                 }
             ],
-            "description": "Minifying CSS",
-            "homepage": "http://code.google.com/p/cssmin/",
+            "description": "Pimple is a simple Dependency Injection Container for PHP 5.3",
+            "homepage": "http://pimple.sensiolabs.org",
             "keywords": [
-                "css",
-                "minify"
+                "container",
+                "dependency injection"
             ],
-            "time": "2013-07-02 20:53:35"
+            "time": "2014-02-11 08:54:01"
         },
         {
             "name": "robloach/component-installer",
@@ -641,7 +613,8 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "lox/pheasant": 20
+        "lox/pheasant": 20,
+        "hybridauth/hybridauth": 20
     },
     "platform": [
 

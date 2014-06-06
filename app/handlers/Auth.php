@@ -1,13 +1,12 @@
 <?php
 namespace app\handlers;
 
-class Main {
+class Auth {
 	function __construct() {
         //ToroHook::add("after_handler", function() { echo "After"; });
     }
     public function get() {
-		$container = \PimpleSingleton::get();
-		$twig = $container['twig'];
-		echo $twig->render('index.html');
+		\Hybrid_Endpoint::process();
+		exit;
     }
 }

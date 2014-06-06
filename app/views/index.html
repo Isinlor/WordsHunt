@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}WordsHunt.net{% endblock %}
+{% block body %}
+
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-5"><img data-src="holder.js/100%x260/social" alt="..."></div>
+        <div class="col-md-7"><h1 class="text-center">Hunt for Words <br> over <br> the Internet</h1></div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-7"><h1 class="text-center">Learn them<br> with <br> WordsHunt.com</h1></div>
+        <div class="col-md-5"><img data-src="holder.js/100%x260/social" alt="..."></div>
+      </div>
+    </div>
+    <div class="jumbotron">
+      <h1 class="text-center">How it Works?</h1>
+      <ol>
+        <li>Register</li>
+        <li>Add bookmarklet <a href="javascript:
+{{ include('bookmarklet.js') }}">Hunt for words!</a> </li>
+        <li>Hunt for words & Save them</li>
+        <li>Learn!</li>
+      </ol>
+    
+{% endblock %}

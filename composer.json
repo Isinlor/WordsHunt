@@ -9,11 +9,13 @@
     ],
     "require": {
         "twig/twig": "1.*",
-        "bradstinson/assets": "1.*",
         "isinlor/torophp": "*",
         "lox/pheasant": "dev-master",
         "components/jquery": "2.0.*",
-        "components/bootstrap": "3.0.*"
+        "components/bootstrap": "3.0.*",
+        "pimple/pimple": "2.*",
+        "imsky/holder": "*",
+        "hybridauth/hybridauth": "dev-master"
     },
     "license": "MIT",
     "authors": [

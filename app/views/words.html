@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}Words{% endblock %}
+{% block body %}
+<h1>Words</h1>
+<ul>
+    {% for word in words %}
+        <li>{{ word.word }} - {{ word.translation }} :: {{ word.exp }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

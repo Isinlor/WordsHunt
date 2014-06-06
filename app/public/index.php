@@ -8,13 +8,18 @@ use ToroPHP\Toro;
 use ToroPHP\ToroHook;
 use ToroPHP\ToroUtil;
 
-ToroHook::add("404", function() {
-    echo "Not found";
+ToroHook::add("404", function($v) {
+    echo "Not found <pre>";
+    var_dump($v);
 });
 
 $handlers = 'app\handlers\\';
+$api = $handlers.'api\\';
 
 Toro::serve(array(
     '/' => $handlers.'Main',
-    '/api/save/:string' => $handlers.'ApiSave'
+    '/words' => $handlers.'Words',
+    '/sign-in' => $handlers.'SignIn',
+    '/sign-in/:string' => $handlers.'SignIn',
+    '/api/save/:string' => $api.'Save'
 ));
