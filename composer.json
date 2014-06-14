@@ -15,7 +15,8 @@
         "components/bootstrap": "3.0.*",
         "pimple/pimple": "2.*",
         "imsky/holder": "*",
-        "hybridauth/hybridauth": "dev-master"
+        "hybridauth/hybridauth": "dev-master",
+        "aura/session": "1.*"
     },
     "license": "MIT",
     "authors": [
