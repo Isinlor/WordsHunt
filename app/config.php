@@ -56,36 +56,38 @@ class PimpleSingleton
 }
 
 $container = PimpleSingleton::get();
-$container['twig'] = function(){
-	// view config
-	$loader = new \Twig_Loader_Filesystem('../views');
-	$twig = new \Twig_Environment($loader, array(
-		'cache' => '../cache/views',
-		'auto_reload' => true,
-	));
+$container['twig'] = function () {
+    // view config
+    $loader = new \Twig_Loader_Filesystem('../views');
+    $twig = new \Twig_Environment($loader, array(
+        'cache' => '../cache/views',
+        'auto_reload' => true,
+    ));
     $twig->addGlobal('publicDir', strstr($_SERVER['SCRIPT_NAME'], '/index.', true));
-	return $twig;
+
+    return $twig;
 };
 $container['hybridAuthConf'] = array(
                                      "base_url" => "http://localhost/isinlor/WordsTree/app/public/index.php/sign-in/auth",
                                      "providers" => array (
                                                            "Google" => array (
                                                                               "enabled" => true,
-                                                                              "keys" => array ( 
+                                                                              "keys" => array (
                                                                                                "id" => "",
-                                                                                               "secret" => "" 
+                                                                                               "secret" => ""
                                                                                                )
                                                                               ),
                                                            "Facebook" => array (
                                                                                 "enabled" => true,
-                                                                                "keys" => array ( 
+                                                                                "keys" => array (
                                                                                                  "id" => "",
-                                                                                                 "secret" => "" 
+                                                                                                 "secret" => ""
                                                                                                  )
                                                                                 ),
                                                            )
 );
-$container['hybridAuth'] = function($c){
+$container['hybridAuth'] = function ($c) {
     $hybridAuth = new Hybrid_Auth( $c['hybridAuthConf'] );
+
     return $hybridAuth;
 };

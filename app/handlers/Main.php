@@ -1,13 +1,16 @@
 <?php
 namespace app\handlers;
 
-class Main {
-	function __construct() {
-        //ToroHook::add("after_handler", function() { echo "After"; });
+class Main
+{
+    public function __construct()
+    {
+        //ToroHook::add("after_handler", function () { echo "After"; });
     }
-    public function get() {
-		$container = \PimpleSingleton::get();
-		$twig = $container['twig'];
-		echo $twig->render('index.html');
+    public function get()
+    {
+        $container = \PimpleSingleton::get();
+        $twig = $container['twig'];
+        echo $twig->render('index.html');
     }
 }

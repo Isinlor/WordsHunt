@@ -24,11 +24,11 @@ class Users extends \Pheasant\DomainObject
   }
   public static function isAuthorised()
   {
-  	return isset($_SESSION['id']);
+    return isset($_SESSION['id']);
   }
   public static function authorize($id)
   {
-  	if ( session_id() === '') { session_start(); }
-  	$_SESSION['id'] = $id;
+    if ( session_id() === '') { session_start(); }
+    $_SESSION['id'] = $id;
   }
 }

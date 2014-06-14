@@ -6,9 +6,8 @@ require '../config.php';
 
 use ToroPHP\Toro;
 use ToroPHP\ToroHook;
-use ToroPHP\ToroUtil;
 
-ToroHook::add("404", function($v) {
+ToroHook::add("404", function ($v) {
     echo "Not found <pre>";
     var_dump($v);
 });
